@@ -1,28 +1,38 @@
-# @aiou/ts-lib-template
-> typescript lib starter
+# functional-md
+> render markdown content in functional
 
-[![npm](https://img.shields.io/npm/v/@aiou/ts-lib-template?style=for-the-badge)](https://github.com/JiangWeixian/templates/tree/master/packages/core) [![GitHub](https://img.shields.io/github/license/jiangweixian/templates?style=for-the-badge)](https://github.com/JiangWeixian/templates/tree/master/packages/ts-lib-template)
+[![npm](https://img.shields.io/npm/v/functional-md?style=for-the-badge)](https://github.com/JiangWeixian/templates/tree/master/packages/core) [![GitHub](https://img.shields.io/github/license/jiangweixian/functional-md?style=for-the-badge)](https://github.com/JiangWeixian/templates/tree/master/packages/ts-lib-template)
 
-## notes
 
-- replace all `ts-lib-template` by real `package-name`
+## usage
 
-## features
+### table
 
-- support simple `react` examples
-- support watch mode in dev
-
-## get started
-
-**develop**
-
+```ts
+table({
+  columns: [
+    {
+      dataIndex: 'id',
+      title: 'ID'
+    },
+    {
+      dataIndex: 'name',
+      title: 'NAME'
+    }
+  ],
+  dataSource: [{
+    id: 1,
+    name: 'jw'
+  }, {
+    id: 2,
+    name: 'jiangweixian'
+  }]
+})
 ```
-npm install
-npm run dev
-```
 
-**build**
+will output
 
-```
-npm run build
-```
+|ID|NAME|
+|-----|-----|
+|1|jw|
+|2|jiangweixian|
