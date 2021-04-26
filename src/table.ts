@@ -7,6 +7,9 @@ export type TableProps<T> = {
   dataSource: T[]
 }
 
+/**
+ * @description render markdown table
+ */
 export const table = <T>(props: TableProps<T>) => {
   const len = props.columns.length
   const tableHeader = new Array(len)
@@ -26,7 +29,7 @@ export const table = <T>(props: TableProps<T>) => {
   const rows = props.dataSource
     .map((v) => {
       const row = props.columns
-        .map(col => `|${col.render?.(v[col.dataIndex]) || v[col.dataIndex]}`)
+        .map((col) => `|${col.render?.(v[col.dataIndex]) || v[col.dataIndex]}`)
         .concat('|')
         .join('')
       return row
