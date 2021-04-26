@@ -1,0 +1,64 @@
+{
+  "name": "@aiou/ts-lib-template",
+  "version": "0.3.6",
+  "description": "a starter for typescript lib",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "url": "https://github.com/JiangWeixian/templates/tree/master/packages/ts-lib-template"
+  },
+  "keywords": [
+    "typescript",
+    "lib",
+    "template",
+    "aiou"
+  ],
+  "watch": {
+    "run_dev": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts",
+      "quiet": true,
+      "legacyWatch": true,
+      "delay": 1000,
+      "runOnChangeOnly": false
+    }
+  },
+  "devDependencies": {
+    "@aiou/eslint-config": "0.0.10",
+    "@types/jest": "24.0.18",
+    "eslint": "^7.18.0",
+    "husky": "3.0.1",
+    "jest": "24.9.0",
+    "np": "5.0.3",
+    "npm-watch": "0.6.0",
+    "prettier": "2.2.1",
+    "pretty-quick": "3.1.0",
+    "rimraf": "3.0.0",
+    "ts-jest": "24.0.2",
+    "ts-node": "8.1.0",
+    "tslib": "1.9.3",
+    "ttypescript": "^1.5.12",
+    "typescript": "^4.1.3",
+    "typescript-transform-paths": "^2.1.0"
+  },
+  "author": "JW",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf lib && ttsc",
+    "run_dev": "rimraf lib && ttsc",
+    "dev": "npm-watch run_dev",
+    "test": "jest",
+    "pretest": "npm run build",
+    "update": "npm update && npm update --save-dev",
+    "check": "npm outdated && npm outdated --save-dev",
+    "release": "npm run build && np --no-cleanup --yolo --no-publish --any-branch"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "gitHead": "37c1b90e655d75d63fb9ed1403c2acb962678083"
+}
