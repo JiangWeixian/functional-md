@@ -6,20 +6,23 @@ describe('table', () => {
       columns: [
         {
           dataIndex: 'id',
-          title: 'ID'
+          title: 'ID',
         },
         {
           dataIndex: 'name',
-          title: 'NAME'
-        }
+          title: 'NAME',
+        },
       ],
-      dataSource: [{
-        id: 1,
-        name: 'jw'
-      }, {
-        id: 2,
-        name: 'jiangweixian'
-      }]
+      dataSource: [
+        {
+          id: 1,
+          name: 'jw',
+        },
+        {
+          id: 2,
+          name: 'jiangweixian',
+        },
+      ],
     })
     console.log(data)
   })
