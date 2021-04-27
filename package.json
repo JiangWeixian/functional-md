@@ -33,7 +33,7 @@
     "lint": "eslint . --fix .",
     "update": "npm update && npm update --save-dev",
     "check": "npm outdated && npm outdated --save-dev",
-    "release": "npm run build && np --no-cleanup --yolo --any-branch"
+    "release": "npm run build && np --no-cleanup --yolo --no-2fa --any-branch"
   },
   "husky": {
     "hooks": {
