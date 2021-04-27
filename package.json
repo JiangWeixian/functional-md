@@ -1,16 +1,14 @@
 {
-  "name": "@aiou/ts-lib-template",
-  "version": "0.3.6",
-  "description": "a starter for typescript lib",
+  "name": "functional-md",
+  "version": "0.0.0",
+  "description": "functional markdown",
   "keywords": [
-    "typescript",
-    "lib",
-    "template",
-    "aiou"
+    "functional",
+    "markdown"
   ],
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/JiangWeixian/templates/tree/master/packages/ts-lib-template"
+    "url": "https://github.com/JiangWeixian/funtional-md"
   },
   "author": "JW",
   "main": "lib/index.js",
