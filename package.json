@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/JiangWeixian/funtional-md"
+    "url": "https://github.com/JiangWeixian/functional-md"
   },
   "author": "JW",
   "main": "lib/index.js",
