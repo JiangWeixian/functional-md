@@ -1,3 +1,4 @@
+import { inlineBlock } from './block'
 import constants from './constants'
 
 type TitleProps = {
@@ -7,5 +8,5 @@ type TitleProps = {
 
 export const title = ({ heading = 1, ...props }: TitleProps) => {
   const hash = '#'.repeat(heading)
-  return [hash, ' ', props.children || '', constants.newline].join('')
+  return inlineBlock([hash, ' ', props.children || '', constants.newline])
 }
