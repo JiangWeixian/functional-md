@@ -1,7 +1,7 @@
 # functional-md
 > render markdown content in functional
 
-[![npm](https://img.shields.io/npm/v/functional-md)](https://github.com/JiangWeixian/functional-md) [![GitHub](https://img.shields.io/github/license/jiangweixian/functional-md)](https://github.com/JiangWeixian/functional-md)
+[![npm](https://img.shields.io/npm/v/functional-md)](https://github.com/JiangWeixian/functional-md) [![NPM](https://img.shields.io/npm/l/functional-md)](https://github.com/JiangWeixian/functional-md)
 
 
 ## usage
