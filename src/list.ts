@@ -6,7 +6,7 @@ type ListProps<T> = {
   limit?: number
 }
 
-const listItem = (value: string) => {
+export const listItem = (value: string) => {
   return ['- ', value].join('')
 }
 
