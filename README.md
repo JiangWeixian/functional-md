@@ -1,14 +1,19 @@
 # functional-md
-> render markdown content in functional
+> render markdown content functional
 
 [![npm](https://img.shields.io/npm/v/functional-md)](https://github.com/JiangWeixian/functional-md) [![NPM](https://img.shields.io/npm/l/functional-md)](https://github.com/JiangWeixian/functional-md)
 
-
 ## usage
+
+```console
+npm install functional-md
+```
 
 ### table
 
 ```ts
+import { table } from 'functional-md'
+
 table({
   columns: [
     {
@@ -20,13 +25,16 @@ table({
       title: 'NAME'
     }
   ],
-  dataSource: [{
-    id: 1,
-    name: 'jw'
-  }, {
-    id: 2,
-    name: 'jiangweixian'
-  }]
+  dataSource: [
+    {
+      id: 1,
+      name: 'jw'
+    },
+    {
+      id: 2,
+      name: 'jiangweixian'
+    }
+  ]
 })
 ```
 
@@ -36,3 +44,14 @@ will output
 |-----|-----|
 |1|jw|
 |2|jiangweixian|
+
+## features
+
+- table
+- menu
+- list
+- overflow-list
+- badge
+- code
+- image
+- link
