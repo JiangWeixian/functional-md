@@ -1,9 +1,9 @@
 type LinkProps = {
   alt?: string
-  src?: string
+  href?: string
   children?: string
 }
 
 export const link = (props: LinkProps) => {
-  return `[${props.alt || props.children || ''}](${props.src || ''})`
+  return `[${props.alt || props.children || ''}](${props.href || ''})`
 }

@@ -42,4 +42,25 @@ describe('menu', () => {
     ]
     expect(menu({ dataSource })).toMatchSnapshot()
   })
+
+  test('menu should support string list mix menu list', () => {
+    expect(
+      menu({
+        dataSource: [
+          {
+            title: 'jw',
+            items: ['1.1', '1.2'],
+          },
+          {
+            title: 'jiangweixian',
+            items: [
+              {
+                title: '2.1',
+              },
+            ],
+          },
+        ],
+      }),
+    ).toMatchSnapshot()
+  })
 })

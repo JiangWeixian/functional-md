@@ -14,7 +14,7 @@ const prefixable = (level: number = 0) => {
   if (level === 0) {
     return ''
   }
-  return ' '.repeat(level)
+  return ' '.repeat(level + 1)
 }
 
 const isStringMenu = (items: (Menu | string)[] = []): items is string[] => {

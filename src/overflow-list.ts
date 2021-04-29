@@ -3,15 +3,17 @@ import { badge } from './badge'
 type OverflowListProps = {
   list?: string[]
   max?: number
+  dataSource?: string[]
+  limit?: number
 }
 
-export const overflowList = ({ max = Infinity, list = [] }: OverflowListProps) => {
-  let sliced = list || []
-  const len = list.length
-  if (max && len > max) {
-    sliced = list?.slice(0, max)
+export const overflowList = ({ limit = Infinity, dataSource = [] }: OverflowListProps) => {
+  let sliced = dataSource || []
+  const len = dataSource.length
+  if (limit && len > limit) {
+    sliced = dataSource?.slice(0, limit)
   }
-  const badgeCount = Math.max(len - max, 0)
+  const badgeCount = Math.max(len - limit, 0)
   const content = sliced.join(', ')
   if (badgeCount > 0) {
     return [content, ' ', badge({ value: badgeCount })].join('')
