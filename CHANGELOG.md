@@ -1,3 +1,3 @@
-# v0.3.0
+# v1.0.0
 
-- ✨ update docs and remove some outdated files
+- ✨ support elements in https://github.com/JiangWeixian/functional-md/issues/1
