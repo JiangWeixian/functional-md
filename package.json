@@ -34,9 +34,9 @@
     "dev": "npm-watch run_dev",
     "test": "jest",
     "lint": "eslint . --fix .",
-    "update": "npm update && npm update --save-dev",
-    "check": "npm outdated && npm outdated --save-dev",
-    "release": "npm run build && np --no-cleanup --yolo --no-2fa --any-branch"
+    "update": "yarn update && yarn update --save-dev",
+    "check": "yarn outdated && yarn outdated --save-dev",
+    "release": "yarn run build && np --no-cleanup --yolo --no-2fa --any-branch"
   },
   "husky": {
     "hooks": {
