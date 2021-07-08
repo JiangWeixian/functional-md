@@ -1,7 +1,13 @@
 import { badge } from './badge'
 
 type OverflowListProps = {
+  /**
+   * @deprecated use dataSource instead
+   */
   list?: string[]
+  /**
+   * @deprecated use max instead
+   */
   max?: number
   dataSource?: string[]
   limit?: number
